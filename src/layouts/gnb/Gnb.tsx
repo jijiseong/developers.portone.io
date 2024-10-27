@@ -96,6 +96,7 @@ export default function Gnb(props: Props) {
         {
           label: "Server SDKs",
           link: "/sdk/ko/v2-server-sdk/readme",
+          systemVersion: "v2",
         },
         {
           label: t()["sdk-playground"],
@@ -134,7 +135,7 @@ export default function Gnb(props: Props) {
         <div class="fixed h-inherit w-full bg-white z-gnb">
           <header
             data-selected-system-version={systemVersion()}
-            class="max-w-8xl mx-auto h-inherit w-full flex flex-col px-4 lg:px-10 md:px-8 sm:px-6"
+            class="mx-auto h-inherit max-w-8xl w-full flex flex-col px-4 lg:px-10 md:px-8 sm:px-6"
           >
             <div class="grid grid-cols-2 h-14 items-center gap-6 border-b bg-white z-gnb-body md:grid-cols-[auto_1fr_auto]">
               <A
